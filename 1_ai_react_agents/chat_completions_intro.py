@@ -86,8 +86,8 @@ import json
 import requests
 from getpass import getpass
 
-API_URL = "https://YOUR_PROVIDER/v1/chat/completions"
-MODEL = "YOUR_MODEL_ID"
+API_URL = "http://127.0.0.1:8015/v1/chat/completions"
+MODEL = "Qwen3.6-35B"
 API_KEY = getpass("API-ключ; для локального сервера без авторизации оставьте пустым: ")
 
 HEADERS = {"Content-Type": "application/json"}
