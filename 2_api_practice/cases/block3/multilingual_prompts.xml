@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cases>
+  <case>
+    <id>1</id>
+    <input>Что такое машинное обучение и как оно работает?</input>
+  </case>
+  <case>
+    <id>2</id>
+    <input>Какие основные языки программирования стоит изучать в 2025 году?</input>
+  </case>
+  <case>
+    <id>3</id>
+    <input>Объясните разницу между фронтендом и бэкендом.</input>
+  </case>
+  <case>
+    <id>4</id>
+    <input>Как создать свой первый сайт? С чего начать?</input>
+  </case>
+  <case>
+    <id>5</id>
+    <input>What is machine learning and how does it work?</input>
+  </case>
+  <case>
+    <id>6</id>
+    <input>Which are the main programming languages to learn in 2025?</input>
+  </case>
+  <case>
+    <id>7</id>
+    <input>Explain the difference between frontend and backend.</input>
+  </case>
+  <case>
+    <id>8</id>
+    <input>How can I build my first website? Where should I start?</input>
+  </case>
+  <case>
+    <id>9</id>
+    <input>Was ist maschinelles Lernen und wie funktioniert es?</input>
+  </case>
+  <case>
+    <id>10</id>
+    <input>Welche Programmiersprachen sollte man im Jahr 2025 lernen?</input>
+  </case>
+  <case>
+    <id>11</id>
+    <input>Erkläre den Unterschied zwischen Frontend und Backend.</input>
+  </case>
+  <case>
+    <id>12</id>
+    <input>Wie kann ich meine erste Website erstellen? Wo fange ich an?</input>
+  </case>
+  <case>
+    <id>13</id>
+    <input>Makine öğrenmesi nedir ve nasıl çalışır?</input>
+  </case>
+  <case>
+    <id>14</id>
+    <input>2025 yılında öğrenilmesi gereken başlıca programlama dilleri hangileridir?</input>
+  </case>
+  <case>
+    <id>15</id>
+    <input>Frontend ve backend arasındaki farkı açıklayın.</input>
+  </case>
+  <case>
+    <id>16</id>
+    <input>İlk web sitemi nasıl yapabilirim? Nereden başlamalıyım?</input>
+  </case>
+  <case>
+    <id>17</id>
+    <input>¿Qué es el aprendizaje automático y cómo funciona?</input>
+  </case>
+  <case>
+    <id>18</id>
+    <input>¿Cuáles son los principales lenguajes de programación que hay que aprender en 2025?</input>
+  </case>
+  <case>
+    <id>19</id>
+    <input>Explica la diferencia entre frontend y backend.</input>
+  </case>
+  <case>
+    <id>20</id>
+    <input>¿Cómo puedo crear mi primera página web? ¿Por dónde empiezo?</input>
+  </case>
+</cases>

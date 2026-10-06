@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cases>
+  <case>
+    <id>1</id>
+    <input>Здравствуйте! Хочу заказать доставку цветов на день рождения мамы. Какой букет лучше выбрать?</input>
+    <expected>
+      <language>ru</language>
+      <language_name>русский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>2</id>
+    <input>Good morning! I would like to know the status of my order #12345. It was supposed to arrive last week.</input>
+    <expected>
+      <language>en</language>
+      <language_name>английский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>3</id>
+    <input>Guten Tag, ich habe eine Frage zu meiner Rechnung. Die Zahlung wurde bereits am 15. März durchgeführt.</input>
+    <expected>
+      <language>de</language>
+      <language_name>немецкий</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>4</id>
+    <input>Merhaba! Siparişim ne zaman kargoya verilecek? 3 gündür takip numarasını takip ediyorum, ama durum değişmiyor.</input>
+    <expected>
+      <language>tr</language>
+      <language_name>турецкий</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>5</id>
+    <input>Hola! Quiero devolver un producto que compré la semana pasada. ¿Puedo hacerlo sin la caja original?</input>
+    <expected>
+      <language>es</language>
+      <language_name>испанский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>6</id>
+    <input>Bonjour, j'aimerais savoir si vous faites la livraison à domicile. J'ai commandé un canapé la semaine dernière.</input>
+    <expected>
+      <language>fr</language>
+      <language_name>французский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>7</id>
+    <input>Buongiorno! Ho un problema con il mio account. Non riesco ad accedere dal mattino. Potete aiutarmi?</input>
+    <expected>
+      <language>it</language>
+      <language_name>итальянский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>8</id>
+    <input>Добрий день! Чи можете ви надіслати мені рахунок-фактуру за моє останнє замовлення? Дякую!</input>
+    <expected>
+      <language>uk</language>
+      <language_name>украинский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>9</id>
+    <input>Hello there! I just received my package and the item inside is damaged. Can I get a replacement?</input>
+    <expected>
+      <language>en</language>
+      <language_name>английский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>10</id>
+    <input>Ich möchte gerne meine Adresse für die zukünftigen Bestellungen ändern. Die neue Adresse lautet: Berliner Straße 42.</input>
+    <expected>
+      <language>de</language>
+      <language_name>немецкий</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>11</id>
+    <input>Selam! Yeni ürünlerinizi görmek için mağazanıza gelebilir miyim? Açılış saati nedir?</input>
+    <expected>
+      <language>tr</language>
+      <language_name>турецкий</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>12</id>
+    <input>Здравствуйте! Подскажите, у вас есть скидки для студентов? У меня есть студенческий билет.</input>
+    <expected>
+      <language>ru</language>
+      <language_name>русский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>13</id>
+    <input>¿Tienen este vestido en talla más grande? La M me queda justa y creo que necesito la L.</input>
+    <expected>
+      <language>es</language>
+      <language_name>испанский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>14</id>
+    <input>Merci beaucoup pour votre aide hier! Le problème est résolu et je peux enfin travailler sur mon projet.</input>
+    <expected>
+      <language>fr</language>
+      <language_name>французский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>15</id>
+    <input>Привет! Спасибо за быстрый ответ. А скажите, вы работаете по выходным? Мне нужно забрать посылку в субботу.</input>
+    <expected>
+      <language>ru</language>
+      <language_name>русский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>16</id>
+    <input>Hello! I would like to request a refund for my recent purchase. The product was not as described.</input>
+    <expected>
+      <language>en</language>
+      <language_name>английский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>17</id>
+    <input>Guten Morgen! Ich habe gestern Abend bestellt, aber ich habe keine Bestätigungs-E-Mail erhalten.</input>
+    <expected>
+      <language>de</language>
+      <language_name>немецкий</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>18</id>
+    <input>Сәлем! Менің тапсырысым қашан жеткізіледі? Мен tracking нөмірін қарап жатырмын.</input>
+    <expected>
+      <language>kk</language>
+      <language_name>казахский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>19</id>
+    <input>Buongiorno! Vorrei sapere se è possibile pagare al ritiro in negozio. Ho scelto il pagamento online.</input>
+    <expected>
+      <language>it</language>
+      <language_name>итальянский</language_name>
+    </expected>
+  </case>
+  <case>
+    <id>20</id>
+    <input>Hola! Tengo una consulta sobre la garantía del producto. Lo compré hace dos meses y ya tiene un defecto.</input>
+    <expected>
+      <language>es</language>
+      <language_name>испанский</language_name>
+    </expected>
+  </case>
+</cases>
