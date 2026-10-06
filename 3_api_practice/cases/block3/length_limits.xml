@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<cases>
+  <case>
+    <id>1</id>
+    <input>Что такое машинное обучение и чем оно отличается от обычного программирования?</input>
+    </case>
+  <case>
+    <id>2</id>
+    <input>Какие основные преимущества использования контейнеризации в разработке программного обеспечения?</input>
+    </case>
+  <case>
+    <id>3</id>
+    <input>Опишите ключевые отличия между SQL и NoSQL базами данных.</input>
+    </case>
+  <case>
+    <id>4</id>
+    <input>Как правильно составить резюме для IT-специалиста без опыта работы?</input>
+    </case>
+  <case>
+    <id>5</id>
+    <input>В чём заключается основная проблема утечки данных в корпоративных сетях?</input>
+    </case>
+  <case>
+    <id>6</id>
+    <input>Что такое DevOps и зачем компании внедряют культуру DevOps?</input>
+    </case>
+  <case>
+    <id>7</id>
+    <input>Какие факторы влияют на выбор облачного провайдера для стартапа?</input>
+    </case>
+  <case>
+    <id>8</id>
+    <input>Объясните разницу между supervised, unsupervised и reinforcement learning.</input>
+    </case>
+</cases>

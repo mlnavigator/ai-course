@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cases>
+  <case>
+    <id>1</id>
+    <type>resume</type>
+    <input>Иванов Алексей
+alex.ivanov@mail.ru | +7 (999) 111-22-33
+Москва
+
+Python Developer | 4 года опыта
+FastAPI, PostgreSQL, Docker, Kubernetes
+МГУ, прикладная математика, 2020</input>
+    <expected>
+      <type>resume</type>
+      <name>Иванов Алексей</name>
+      <email>alex.ivanov@mail.ru</email>
+      <phone>+7 (999) 111-22-33</phone>
+      <city>Москва</city>
+      <skills>["Python", "FastAPI", "PostgreSQL", "Docker", "Kubernetes"]</skills>
+    </expected>
+  </case>
+  <case>
+    <id>2</id>
+    <type>invoice</type>
+    <input>СЧЁТ № 55 от 15.03.2024
+ООО «Ромашка» ИНН 7701234567
+Для ООО «Техно» ИНН 7709876543
+
+Товар                Кол-во   Цена      Сумма
+Ноутбук Dell            2    65000    130000
+Монитор LG               2    25000     50000
+Итого:                              180000
+НДС 20%:                 36000
+Итого с НДС:            216000</input>
+    <expected>
+      <type>invoice</type>
+      <invoice_number>55</invoice_number>
+      <date>2024-03-15</date>
+      <inn>7709876543</inn>
+      <amount>216000</amount>
+      <currency>RUB</currency>
+      <payee>ООО Ромашка</payee>
+      <payer>ООО Техно</payer>
+    </expected>
+  </case>
+  <case>
+    <id>3</id>
+    <type>schedule</type>
+    <input>Расписание встреч — 20 марта
+10:00-11:00  Стендап команды (Zoom)
+14:00-15:00  Презентация проекта (зал 301)
+16:00-17:00  Интервью с кандидатом (онлайн)</input>
+    <expected>
+      <type>schedule</type>
+      <event>Стендап команды</event>
+      <date>2024-03-20</date>
+      <time>10:00-11:00</time>
+      <speaker>не указан</speaker>
+      <topic>Ежедневный стендап</topic>
+    </expected>
+  </case>
+  <case>
+    <id>4</id>
+    <type>resume</type>
+    <input>Мария Коваленко
+maria.kov@yandex.ru
+Санкт-Петербург | +7 (911) 555-66-77
+
+Data Analyst | 3 года
+Python, SQL, pandas, TensorFlow, Power BI
+СПбГУ, экономика, 2019
+Ozon — Data Analyst (2021-н.в.)</input>
+    <expected>
+      <type>resume</type>
+      <name>Мария Коваленко</name>
+      <email>maria.kov@yandex.ru</email>
+      <phone>+7 (911) 555-66-77</phone>
+      <city>Санкт-Петербург</city>
+      <skills>["Python", "SQL", "pandas", "TensorFlow", "Power BI"]</skills>
+    </expected>
+  </case>
+  <case>
+    <id>5</id>
+    <type>invoice</type>
+    <input>ПЛАТЁЖКА № 890
+25.03.2024
+ИП Петров С.П. ИНН 770111222333
+Получатель: ООО «Арт-Студия» ИНН 7705556677
+Назначение: Оплата за дизайн
+Сумма: 45000 руб.</input>
+    <expected>
+      <type>invoice</type>
+      <invoice_number>890</invoice_number>
+      <date>2024-03-25</date>
+      <inn>7705556677</inn>
+      <amount>45000</amount>
+      <currency>RUB</currency>
+      <payee>ООО Арт-Студия</payee>
+      <payer>ИП Петров С.П.</payer>
+    </expected>
+  </case>
+  <case>
+    <id>6</id>
+    <type>schedule</type>
+    <input>Вебинар «Машинное обучение для начинающих»
+15 апреля, 18:00-19:30
+Спикер: Елена Васильева, CTO Яндекс.Облака
+Формат: онлайн, Zoom</input>
+    <expected>
+      <type>schedule</type>
+      <event>Вебинар Машинное обучение для начинающих</event>
+      <date>2024-04-15</date>
+      <time>18:00-19:30</time>
+      <speaker>Елена Васильева</speaker>
+      <topic>Машинное обучение для начинающих</topic>
+    </expected>
+  </case>
+  <case>
+    <id>7</id>
+    <type>resume</type>
+    <input>Дмитрий Волков
+dev.volkov@gmail.com | +7 (495) 888-12-34
+Москва
+
+DevOps Engineer | 8 лет
+Kubernetes, Docker, Terraform, Ansible, AWS, GCP
+МГУ, вычислительная математика, 2014-2016
+VK — Lead SRE (2021-н.в.)</input>
+    <expected>
+      <type>resume</type>
+      <name>Дмитрий Волков</name>
+      <email>dev.volkov@gmail.com</email>
+      <phone>+7 (495) 888-12-34</phone>
+      <city>Москва</city>
+      <skills>["Kubernetes", "Docker", "Terraform", "Ansible", "AWS", "GCP"]</skills>
+    </expected>
+  </case>
+  <case>
+    <id>8</id>
+    <type>invoice</type>
+    <input>СЧЁТ № 12-АБВ от 01.04.2024
+ООО «ЭнерджиСистем» ИНН 7702223344
+Для ООО «ТехноСтарт» ИНН 7705556677
+
+ИБП APC Smart-UPS 3000VA    2    45000    90000
+Стабилизатор Штиль 15000     1    32000    32000
+Монтаж и подключение         1    15000    15000
+Итого:                      137000
+НДС 20%:                     27400
+Итого с НДС:                164400</input>
+    <expected>
+      <type>invoice</type>
+      <invoice_number>12-АБВ</invoice_number>
+      <date>2024-04-01</date>
+      <inn>7705556677</inn>
+      <amount>164400</amount>
+      <currency>RUB</currency>
+      <payee>ООО ЭнерджиСистем</payee>
+      <payer>ООО ТехноСтарт</payer>
+    </expected>
+  </case>
+  <case>
+    <id>9</id>
+    <type>schedule</type>
+    <input>Корпоративное мероприятие — День здоровья
+Дата: 10 мая 2024
+Время: 12:00-16:00
+Место: Центральный парк
+Программа: зарядка, мастер-классы по здоровому питанию, командные эстафеты</input>
+    <expected>
+      <type>schedule</type>
+      <event>День здоровья</event>
+      <date>2024-05-10</date>
+      <time>12:00-16:00</time>
+      <speaker>не указан</speaker>
+      <topic>Корпоративный день здоровья</topic>
+    </expected>
+  </case>
+  <case>
+    <id>10</id>
+    <type>resume</type>
+    <input>Ольга Савченко
+o.savchenko@bk.ru
++7 (903) 444-55-66
+Нижний Новгород
+
+QA Engineer | 4 года
+pytest, Selenium, Playwright, Postman, JMeter
+ННГУ, прикладная математика, 2018-2020
+Контур — QA Engineer (2023-н.в.)</input>
+    <expected>
+      <type>resume</type>
+      <name>Ольга Савченко</name>
+      <email>o.savchenko@bk.ru</email>
+      <phone>+7 (903) 444-55-66</phone>
+      <city>Нижний Новгород</city>
+      <skills>["pytest", "Selenium", "Playwright", "Postman", "JMeter"]</skills>
+    </expected>
+  </case>
+</cases>

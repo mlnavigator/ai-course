@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cases>
+  <case>
+    <id>1</id>
+    <input>Здравствуйте! Я заказал ноутбук 3 дня назад, а статус «в обработке». Это нормально для экспресс-доставки? Очень нужен к понедельнику.</input>
+    <expected>
+      <category>техническая_проблема</category>
+      <extracted_data>{"order_type": "экспресс-доставка", "deadline": "понедельник", "status": "в обработке"}</extracted_data>
+      <suggested_response>Благодарим за обращение! Проверяем статус вашего заказа. Обычно экспресс-доставка занимает 1-2 дня. Сообщим подробности в течение часа.</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>2</id>
+    <input>Хочу вернуть телефон. Не подошёл цвет. Заказ от 10 марта. Чек на почте, коробка открыта.</input>
+    <expected>
+      <category>возврат</category>
+      <extracted_data>{"product": "телефон", "reason": "не подошёл цвет", "order_date": "2024-03-10", "packaging": "коробка открыта"}</extracted_data>
+      <suggested_response>Для возврата товара необходимо оформить заявку в личном кабинете или связаться с нами. Срок возврата — 14 дней с момента получения. Рекомендуем сохранить упаковку и комплектацию.</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>3</id>
+    <input>Подскажите, у вас есть гарантия на пылесос? И какой срок службы у фильтра HEPA?</input>
+    <expected>
+      <category>другое</category>
+      <extracted_data>{"product": "пылесос", "question_type": "гарантия", "specific": "срок службы фильтра HEPA"}</extracted_data>
+      <suggested_response>Да, на все пылесосы действует гарантия 2 года. Срок службы фильтра HEPA — 6-12 месяцев при регулярной эксплуатации. Рекомендем менять раз в 8 месяцев.</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>4</id>
+    <input>Почему с моей карты списали дважды за один заказ? Заказ №12345 на 5000 руб.</input>
+    <expected>
+      <category>оплата</category>
+      <extracted_data>{"order_id": "12345", "amount": 5000, "issue": "двойное списание"}</extracted_data>
+      <suggested_response>Приносим извинения за проблему! Двойное списание — технический сбой. Один платёж будет отменён в течение 3-5 рабочих дней. Проверим статус и сообщим.</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>5</id>
+    <input>Мне прислали не тот товар! Заказала синие кроссовки, а пришли красные. Размер верный. Что делать?</input>
+    <expected>
+      <category>техническая_проблема</category>
+      <extracted_data>{"ordered": "синие кроссовки", "received": "красные кроссовки", "size": "верный", "issue": "неправильный товар"}</extracted_data>
+      <suggested_response>Сожалеем о ошибке! Оформляем обмен: заберём неправильный товар и отправим верный. Курьер будет завтра. Извините за неудобства.</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>6</id>
+    <input>Здравствуйте! Подскажите, можно ли заказать книгу «Чистый код» в твёрдом переплёте? На сайте только мягкая обложка.</input>
+    <expected>
+      <category>другое</category>
+      <extracted_data>{"product": "книга «Чистый код»", "requested_format": "твёрдый переплёт", "available": "мягкий переплёт"}</extracted_data>
+      <suggested_response>На данный момент в наличии только мягкий переплёт. Твёрдый переплёт можем заказать под заказ — срок доставки 5-7 дней. Оформить?</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>7</id>
+    <input>Как отменить подписку на еженедельную доставку хлеба? Не могу найти кнопку в приложении.</input>
+    <expected>
+      <category>техническая_проблема</category>
+      <extracted_data>{"service": "подписка на доставку хлеба", "frequency": "еженедельно", "issue": "не может отменить"}</extracted_data>
+      <suggested_response>Для отмены: нажмите «Мои подписки» → выбрать → «Отменить». Если не получается, напишите нам — поможем!</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>8</id>
+    <input>Сколько стоит доставка в Новосибирск? Заказ на 15000 рублей. Есть ли самовывоз?</input>
+    <expected>
+      <category>другое</category>
+      <extracted_data>{"destination": "Новосибирск", "order_amount": 15000, "question_delivery": true, "question_pickup": true}</extracted_data>
+      <suggested_response>Доставка в Новосибирск — 490 рублей. При заказе от 3000 руб. — бесплатно! Самовывоз доступен в 15 пунктах. Ближайший найдём по вашему адресу.</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>9</id>
+    <input>Ваш сайт упал! Не могу оформить заказ уже 2 часа! Сервис не работает!</input>
+    <expected>
+      <category>техническая_проблема</category>
+      <extracted_data>{"issue": "сайт недоступен", "duration": "2 часа", "impact": "не могу оформить заказ", "emotion": "фрустрация"}</extracted_data>
+      <suggested_response>Приносим извинения! Проводим технические работы. Сайт работает в восстановленном режиме. Если не можете оформить — позвоните нам: 8-800-123-45-67.</suggested_response>
+    </expected>
+  </case>
+  <case>
+    <id>10</id>
+    <input>У вас акция «3 по цене 2»? Хочу взять 3 набора LEGO.</input>
+    <expected>
+      <category>другое</category>
+      <extracted_data>{"promotion": "3 по цене 2", "product": "наборы LEGO", "quantity": 3}</extracted_data>
+      <suggested_response>Да, акция «3 по цене 2» действует на наборы LEGO! Возьмите 3 набора — оплатите за 2. Акция до конца месяца. Не забудьте промокод LEGO3.</suggested_response>
+    </expected>
+  </case>
+</cases>
