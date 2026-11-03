@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cbr-rates": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "/home/alex/bb_courses/use_ai_kstu/4_mcp/task/student_external.py"
+      ]
+    }
+  }
+}
