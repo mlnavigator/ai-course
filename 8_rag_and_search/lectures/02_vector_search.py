@@ -5,8 +5,10 @@
 #     text_representation:
 #       extension: .py
 #       format_name: percent
+#       format_version: '1.3'
+#       jupytext_version: 1.19.5
 #   kernelspec:
-#     display_name: Python 3
+#     display_name: Python 3 (ipykernel)
 #     language: python
 #     name: python3
 # ---
@@ -91,6 +93,7 @@ load_dotenv(Path("../.env"))
 load_dotenv(Path(".env"))
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "").strip()
+BASE_URL = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
 EMBED_MODEL = os.environ.get("OPENROUTER_EMBED_MODEL", "openai/text-embedding-3-small").strip()
 CACHE_DIR = Path("../embeddings")
 MAX_NEW_TEXTS = 50
@@ -126,7 +129,7 @@ class CachedEmbedder:
             )
         if len(texts) > MAX_NEW_TEXTS:
             raise RuntimeError(f"{len(texts)} новых текстов > MAX_NEW_TEXTS={MAX_NEW_TEXTS}: защита от лишних трат")
-        client = OpenAI(api_key=self.api_key, base_url="https://openrouter.ai/api/v1")
+        client = OpenAI(api_key=self.api_key, base_url=BASE_URL)
         response = client.embeddings.create(model=self.model, input=texts)
         usage = getattr(response, "usage", None)
         tokens = int(getattr(usage, "prompt_tokens", 0) or 0)
